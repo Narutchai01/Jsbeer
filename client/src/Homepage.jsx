@@ -2,6 +2,12 @@ import { TypeAnimation } from 'react-type-animation';
 import Banner from '../src/assets/Banner.png'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import { CiBeerMugFull } from 'react-icons/ci'
+import { IoMdHappy } from 'react-icons/io'
+import { AiFillHeart } from 'react-icons/ai'
+
+
+
 
 const Homepage = () => {
 
@@ -72,6 +78,22 @@ const Homepage = () => {
                                 </div>
                             </div>
                         ))}
+                    </div>
+                </div>
+                <div className='text-white py-[220px] container mx-auto px-[220px]'>
+                    <div className='flex justify-between'>
+                        <div className='h-72 w-72  items-center flex justify-center flex-col rounded-xl shadow-[0_1px_60px_-30px] shadow-[#fca311] hover:bg-[#fca311] hover:text-[#000814]'>
+                            <span className='text-[90px]'><CiBeerMugFull /></span>
+                            <h1 className='text-2xl font-bold'>Goodbeer</h1>
+                        </div>
+                        <div className='h-72 w-72  items-center flex justify-center flex-col rounded-xl shadow-[0_1px_60px_-30px] shadow-[#fca311] hover:bg-[#fca311] hover:text-[#000814]'>
+                            <span className='text-[90px]'><IoMdHappy /></span>
+                            <h1 className='text-2xl font-bold'>Goodbeer</h1>
+                        </div>
+                        <div className='h-72 w-72  items-center flex justify-center flex-col rounded-xl shadow-[0_1px_60px_-30px] shadow-[#fca311] hover:bg-[#fca311] hover:text-[#000814]'>
+                            <span className='text-[90px]'><AiFillHeart /></span>
+                            <h1 className='text-2xl font-bold'>Goodbeer</h1>
+                        </div>
                     </div>
                 </div>
             </div>
