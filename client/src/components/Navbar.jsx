@@ -1,5 +1,5 @@
 import { GiBeerBottle } from 'react-icons/gi'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -13,13 +13,19 @@ const Navbar = () => {
                     </div>
                     <ul className='flex gap-9 text-lg'>
                         <li>
-                            <Link href="/">HOME</Link>
+                            <Link>
+                                <a href="/">HOME</a>
+                            </Link>
                         </li>
                         <li>
-                            <Link href="/brewery">BREWERY</Link>
+                            <Link>
+                                <a href="/brewery">BREWERY</a>
+                            </Link>
                         </li>
                         <li>
-                            <Link href="/about">FACT</Link>
+                            <Link>
+                                <a href="/fact">FACT</a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

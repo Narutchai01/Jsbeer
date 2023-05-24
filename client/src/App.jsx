@@ -4,7 +4,7 @@ import Homepage from './Homepage'
 import Navbar from './components/Navbar'
 import { Routes, Route } from 'react-router-dom'
 import Brewerypage from './Brewerypage'
-import About from './About'
+import About from './Fact'
 import Footer from './components/Footer'
 
 
@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/Brewery" element={<Brewerypage />} />
-        <Route path="/about" element={<About/>} />
+        <Route path="/fact" element={<About/>} />
       </Routes>
       <Footer />
     </>

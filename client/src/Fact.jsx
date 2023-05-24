@@ -1,6 +1,6 @@
 
 
-const About = () => {
+const Fact = () => {
     return (
         <>
             <div className="h-screen bg-[#000814] text-[#fca311]">
@@ -17,4 +17,4 @@ const About = () => {
     )
 }
 
-export default About
+export default Fact
