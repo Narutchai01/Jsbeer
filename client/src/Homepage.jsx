@@ -88,11 +88,11 @@ const Homepage = () => {
                         </div>
                         <div className='h-72 w-72  items-center flex justify-center flex-col rounded-xl shadow-[0_1px_60px_-30px] shadow-[#fca311] hover:bg-[#fca311] hover:text-[#000814]'>
                             <span className='text-[90px]'><IoMdHappy /></span>
-                            <h1 className='text-2xl font-bold'>Goodbeer</h1>
+                            <h1 className='text-2xl font-bold'>Goodlift</h1>
                         </div>
                         <div className='h-72 w-72  items-center flex justify-center flex-col rounded-xl shadow-[0_1px_60px_-30px] shadow-[#fca311] hover:bg-[#fca311] hover:text-[#000814]'>
                             <span className='text-[90px]'><AiFillHeart /></span>
-                            <h1 className='text-2xl font-bold'>Goodbeer</h1>
+                            <h1 className='text-2xl font-bold'>Goodmind</h1>
                         </div>
                     </div>
                 </div>
