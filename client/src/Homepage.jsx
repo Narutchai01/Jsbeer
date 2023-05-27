@@ -63,36 +63,39 @@ const Homepage = () => {
                         </div>
                         <img src={Banner} alt="" />
                     </div>
-                    <div className='rounded-lg h-[600px] container mx-auto px-[160px] shadow-[0_1px_60px_-30px] shadow-[#fca311]'>
-                        {data.map((item) => (
-                            <div key={item.id} className='flex justify-center h-full gap-28  items-center'>
-                                <div className='bg-[#D9D9D9] w-[600px] flex justify-center rounded-xl p-2'>
-                                    <img src={item.image_url} className='rounded-lg' width="140px" alt="" />
+                    <div className='rounded-lg h-auto container mx-auto px-[160px] shadow-[0_1px_60px_-30px] shadow-[#fca311]'>
+                        <div className='flex flex-col justify-center h-full text-2xl'>
+                            {data.map((item, id) => (
+                                <div key={id} className='grid grid-cols-2 items-center py-10'>
+                                    <div className='w-[300px] h-[500px] bg-gray-600 flex justify-center p-5 rounded-lg'>
+                                        <img src={item.image_url} width='100px' height='300px' alt="" />
+                                    </div>
+                                    <div className='text-white items-center'>
+                                        <h1 className='text-2xl font-bold'>{item.name}</h1>
+                                        <p className='text-sm'>{item.tagline}</p>
+                                        <p className='text-sm'>FIRST BREW : {item.first_brewed}</p>
+                                        <p className='text-sm'>ABV : {item.abv}% | IBU : {item.ibu}</p>
+                                        <p className='text-sm'>{item.description}</p>
+                                    </div>
                                 </div>
-                                <div className='text-[#fca311] w-[600px] text-lg items-center '>
-                                    <h1 className='font-bold text-xl'>{item.name}</h1>
-                                    <h2>{item.tagline}</h2>
-                                    <h2>{item.first_brewed}</h2>
-                                    <h2>Alcohol:{item.abv}% , Taste:{item.ibu}</h2>
-                                    <h2>{item.description}</h2>
-                                </div>
-                            </div>
-                        ))}
+                            ))}
+                            <button className='text-white mt-6 mb-10 mx-[200px] p-6 rounded-xl relative shadow-[0_1px_60px_-30px] shadow-[#fca311] font-bold hover:text-[#000814] hover:bg-[#fca311]' onClick={getData}>RANDOM</button>
+                        </div>
                     </div>
                 </div>
                 <div className='text-white py-[220px] container mx-auto px-[220px]'>
                     <div className='flex justify-between'>
                         <div className='h-72 w-72  items-center flex justify-center flex-col rounded-xl shadow-[0_1px_60px_-30px] shadow-[#fca311] hover:bg-[#fca311] hover:text-[#000814]'>
                             <span className='text-[90px]'><CiBeerMugFull /></span>
-                            <h1 className='text-2xl font-bold'>Goodbeer</h1>
+                            <h1 className='text-2xl font-bold'>GOOD BEER</h1>
                         </div>
                         <div className='h-72 w-72  items-center flex justify-center flex-col rounded-xl shadow-[0_1px_60px_-30px] shadow-[#fca311] hover:bg-[#fca311] hover:text-[#000814]'>
                             <span className='text-[90px]'><IoMdHappy /></span>
-                            <h1 className='text-2xl font-bold'>Goodlift</h1>
+                            <h1 className='text-2xl font-bold'>GOOD LIFT</h1>
                         </div>
                         <div className='h-72 w-72  items-center flex justify-center flex-col rounded-xl shadow-[0_1px_60px_-30px] shadow-[#fca311] hover:bg-[#fca311] hover:text-[#000814]'>
                             <span className='text-[90px]'><AiFillHeart /></span>
-                            <h1 className='text-2xl font-bold'>Goodmind</h1>
+                            <h1 className='text-2xl font-bold'>GOOD MIND</h1>
                         </div>
                     </div>
                 </div>
