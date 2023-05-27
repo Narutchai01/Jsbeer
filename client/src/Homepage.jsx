@@ -70,7 +70,7 @@ const Homepage = () => {
                                     <div className='w-[300px] h-[500px] bg-gray-600 flex justify-center p-5 rounded-lg'>
                                         <img src={item.image_url} width='100px' height='300px' alt="" />
                                     </div>
-                                    <div className='text-white items-center'>
+                                    <div className='text-[#fca311] text-3xl items-center'>
                                         <h1 className='text-2xl font-bold'>{item.name}</h1>
                                         <p className='text-sm'>{item.tagline}</p>
                                         <p className='text-sm'>FIRST BREW : {item.first_brewed}</p>
@@ -79,7 +79,7 @@ const Homepage = () => {
                                     </div>
                                 </div>
                             ))}
-                            <button className='text-white mt-6 mb-10 mx-[200px] p-6 rounded-xl relative shadow-[0_1px_60px_-30px] shadow-[#fca311] font-bold hover:text-[#000814] hover:bg-[#fca311]' onClick={getData}>RANDOM</button>
+                            <button className='text-[#fca111] mt-6 mb-10 mx-[250px] p-6 rounded-xl relative shadow-sm shadow-[#fca311] font-bold hover:text-[#000814] hover:bg-[#fca311]' onClick={getData}>RANDOM</button>
                         </div>
                     </div>
                 </div>
